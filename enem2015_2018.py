@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
+# In[10]:
 
 
 from bokeh.io import output_notebook, show
@@ -14,7 +14,7 @@ output_notebook()
 import pandas as pd
 
 
-# In[5]:
+# In[11]:
 
 
 df_results = pd.read_csv("results4itemTRI1.txt", sep=" ")
@@ -39,7 +39,7 @@ df_results.head(10)
     
 
 
-# In[6]:
+# In[12]:
 
 
 
@@ -68,7 +68,7 @@ p.circle('x', 'y', size=20, source=source)
 show(p);
 
 
-# In[7]:
+# In[13]:
 
 
 import yaml
@@ -84,7 +84,7 @@ from bokeh.sampledata.sea_surface_temperature import sea_surface_temperature
 output_notebook()
 
 
-# In[8]:
+# In[14]:
 
 
 def bkapp(doc):
@@ -124,13 +124,13 @@ def bkapp(doc):
     
 
 
-# In[9]:
+# In[15]:
 
 
 show(bkapp) # notebook_url="http://localhost:8888"
 
 
-# In[10]:
+# In[16]:
 
 
 import pandas as pd
@@ -258,13 +258,13 @@ def myapp(doc):
     
 
 
-# In[11]:
+# In[17]:
 
 
 df.head(10)
 
 
-# In[12]:
+# In[18]:
 
 
 show(myapp) # notebook_url="http://localhost:8888"
